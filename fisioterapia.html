@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fisioterapia | +Activo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Reutilizamos el mismo archivo CSS para que se vea igual -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .header-secundario { padding: 4rem 1rem; }
+        .detalle-servicio { display: flex; gap: 2rem; margin-top: 2rem; }
+        .info-tiempos { background: white; padding: 2rem; border-radius: 10px; border-left: 5px solid var(--dorado-logo); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html"><img src="imagen_2026-09-14_171300325.png" alt="Logo de +Activo" class="logo"></a>
+        <div>
+            <a href="index.html" class="nav-links">Volver al Inicio</a>
+        </div>
+    </nav>
+
+    <header class="header-secundario">
+        <h1>Fisioterapia y Rehabilitación</h1>
+    </header>
+
+    <div class="container">
+        <div class="detalle-servicio">
+            <div class="texto">
+                <h2>¿En qué consiste la sesión?</h2>
+                <p>La fisioterapia está orientada a recuperar la movilidad, tratar lesiones deportivas o crónicas, y aliviar el dolor muscular y articular. Mediante una evaluación inicial, determinamos el mejor tratamiento combinando terapia manual, ejercicios terapéuticos y aparatología si es necesario.</p>
+                
+                <div class="info-tiempos">
+                    <h3>⏱️ Tiempos y Duración</h3>
+                    <ul>
+                        <li><strong>Evaluación inicial:</strong> 15 minutos.</li>
+                        <li><strong>Sesión de tratamiento:</strong> 45 a 60 minutos.</li>
+                        <li><strong>Frecuencia recomendada:</strong> Dependerá de la lesión, generalmente 1 a 2 veces por semana.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN DE COMENTARIOS -->
+        <hr style="margin: 4rem 0; border: none; border-top: 1px solid #ddd;">
+        <h2>Comentarios y Testimonios</h2>
+        <p style="text-align: center;">¿Te has atendido con nosotros? ¡Déjanos tu opinión!</p>
+        
+        <div id="disqus_thread"></div>
+        <script>
+            /* Este es el código estándar de Disqus para habilitar comentarios */
+            var disqus_config = function () {
+                this.page.url = window.location.href;  
+                this.page.identifier = 'fisioterapia'; 
+            };
+            (function() { 
+                var d = document, s = d.createElement('script');
+                // IMPORTANTE: Cuando crees tu cuenta, cambiarás "tupagina" por el nombre de tu cuenta en Disqus
+                s.src = 'https://tupagina.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 +Activo - Fisioterapia y Masajes</p>
+    </footer>
+
+    <a href="https://wa.me/5492610000000?text=Hola,%20quisiera%20consultar%20por%20un%20turno%20de%20Fisioterapia" class="whatsapp-flotante" target="_blank">
+        💬 Pedir Turno
+    </a>
+
+</body>
+</html>
