@@ -4,169 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>+Activo | Fisioterapia y Masajes</title>
-    <!-- Aquí agregué la nueva fuente "Playfair Display" para el título principal -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-    <style>
-        /* PALETA DE COLORES EXTRAÍDA DEL LOGO */
-        :root {
-            --azul-logo: #1c2a38;  
-            --dorado-logo: #bba078; 
-            --fondo: #f9fafb;       
-            --blanco: #ffffff;
-            --texto: #4a4a4a;
-        }
-
-        body {
-            font-family: 'Montserrat', sans-serif;
-            line-height: 1.7;
-            margin: 0;
-            padding: 0;
-            background-color: var(--fondo);
-            color: var(--texto);
-        }
-
-        nav {
-            background-color: var(--blanco);
-            padding: 10px 30px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05); 
-        }
-
-        .logo { height: 70px; width: auto; }
-
-        .nav-links {
-            color: var(--azul-logo);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: color 0.3s;
-        }
-
-        .nav-links:hover { color: var(--dorado-logo); }
-
-        header {
-            background: linear-gradient(rgba(28, 42, 56, 0.7), rgba(28, 42, 56, 0.7)), url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
-            color: white;
-            padding: 7rem 1rem;
-            text-align: center;
-        }
-
-        /* DISEÑO MEJORADO PARA EL TÍTULO */
-        h1 { 
-            margin: 0; 
-            font-family: 'Playfair Display', serif; /* Nueva tipografía elegante */
-            font-size: 4.5rem; /* Más grande */
-            color: var(--dorado-logo); /* Color dorado del logo */
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.6); /* Sombra para que resalte */
-        }
-        
-        header p {
-            font-size: 1.3rem;
-            letter-spacing: 1px;
-            text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
-        }
-        
-        h2 { 
-            color: var(--azul-logo); 
-            font-size: 2.2rem; 
-            text-align: center; 
-            margin-bottom: 2rem; 
-        }
-        
-        .container { padding: 3rem 2rem; max-width: 1100px; margin: auto; }
-        
-        /* NUEVO DISEÑO PARA LA SECCIÓN "SOBRE MÍ" */
-        .intro { margin-bottom: 5rem; }
-        
-        .intro-content {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 3rem;
-            flex-wrap: wrap; /* Para que en celulares se ponga uno abajo del otro */
-        }
-
-        .intro-texto {
-            flex: 1;
-            min-width: 300px;
-            font-size: 1.1rem;
-            text-align: justify;
-        }
-
-        .intro-imagen {
-            width: 100%;
-            max-width: 400px;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-            /* Borde dorado sutil para combinar con el logo */
-            border: 3px solid var(--dorado-logo); 
-        }
-
-        .services { display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; }
-        
-        .card {
-            background: var(--blanco);
-            border-radius: 12px;
-            box-shadow: 0 8px 15px rgba(0,0,0,0.05);
-            flex: 1;
-            min-width: 280px;
-            text-align: center;
-            border-bottom: 5px solid var(--dorado-logo); /* Pasé la línea abajo para equilibrar la imagen */
-            overflow: hidden; /* Evita que la imagen se salga de los bordes curvos */
-            transition: transform 0.3s ease, box-shadow 0.3s ease; 
-        }
-
-        .card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 25px rgba(0,0,0,0.12);
-        }
-
-        /* ESTILO PARA LAS IMÁGENES DE LAS TARJETAS */
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover; /* Asegura que la imagen no se deforme */
-        }
-
-        .card-body {
-            padding: 1.5rem 2rem 2.5rem 2rem;
-        }
-
-        .card h3 { 
-            color: var(--azul-logo); 
-            font-size: 1.4rem;
-            margin-top: 0;
-        }
-
-        .whatsapp-flotante {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background-color: #25D366;
-            color: white;
-            padding: 15px 25px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
-            z-index: 1000;
-            transition: transform 0.3s ease;
-        }
-
-        .whatsapp-flotante:hover { transform: scale(1.1); }
-
-        footer { 
-            text-align: center; 
-            padding: 2rem; 
-            background-color: var(--azul-logo); 
-            color: white; 
-        }
-    </style>
+    <!-- AQUÍ CONECTAMOS EL ARCHIVO CSS EXTERNO -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -183,7 +23,6 @@
     </header>
 
     <div class="container">
-        <!-- SECCIÓN SOBRE MÍ CON IMAGEN -->
         <section class="intro">
             <h2>Sobre mí</h2>
             <div class="intro-content">
@@ -195,32 +34,32 @@
             </div>
         </section>
 
-        <!-- SECCIÓN SERVICIOS CON IMÁGENES -->
         <section id="servicios" class="services">
             <div class="card">
-                <!-- Foto de Fisioterapia -->
                 <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fisioterapia">
                 <div class="card-body">
                     <h3>Fisioterapia</h3>
                     <p>Rehabilitación de lesiones, tratamientos posturales y recuperación muscular.</p>
+                    <!-- ENLACE A LA NUEVA PÁGINA -->
+                    <a href="fisioterapia.html" class="btn-saber-mas">Saber más</a>
                 </div>
             </div>
             
             <div class="card">
-                <!-- Foto de Masaje Descontracturante -->
                 <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Masaje Descontracturante">
                 <div class="card-body">
                     <h3>Masajes Descontracturantes</h3>
                     <p>Alivio de tensiones profundas, estrés acumulado y dolores crónicos.</p>
+                    <a href="descontracturante.html" class="btn-saber-mas">Saber más</a>
                 </div>
             </div>
             
             <div class="card">
-                <!-- Foto de Masaje Relajante -->
                 <img src="https://www.wellme.es/site/article/63566/53459/como-hacer-masajes-relajantes-descubre-todos-sus-beneficios-0_ai1.jpg" alt="Masaje Relajante">
                 <div class="card-body">
                     <h3>Masajes Relajantes</h3>
                     <p>Sesiones enfocadas en calmar el sistema nervioso y promover un descanso profundo.</p>
+                    <a href="relajante.html" class="btn-saber-mas">Saber más</a>
                 </div>
             </div>
         </section>
