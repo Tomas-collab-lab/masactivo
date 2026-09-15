@@ -64,11 +64,45 @@ nav {
     color: var(--dorado-logo); 
 }
 
-header { 
-    background: linear-gradient(rgba(28, 42, 56, 0.7), rgba(28, 42, 56, 0.7)), url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover; 
-    color: white; 
-    padding: 6rem 1rem; 
+/* ESTILOS DEL ENCABEZADO CON VIDEO */
+.hero { 
+    position: relative;
+    min-height: 70vh; /* Altura del encabezado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center; 
+    overflow: hidden; /* Evita que el video sobresalga de los bordes */
+    padding: 7rem 1rem;
+}
+
+.video-fondo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+    object-fit: cover; /* Hace que el video se adapte a cualquier pantalla sin deformarse */
+}
+
+.capa-oscura {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(28, 42, 56, 0.6); /* Color azul oscuro semitransparente del logo */
+    z-index: 1;
+}
+
+.hero-contenido {
+    position: relative;
+    z-index: 2; /* Asegura que las letras queden por encima del video y la capa oscura */
+    color: white;
 }
 
 h1 { 
