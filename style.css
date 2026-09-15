@@ -97,38 +97,64 @@ h2 { color: var(--azul-logo); font-size: 2.2rem; text-align: center; margin-bott
 .btn-saber-mas:hover { background-color: var(--azul-logo); }
 
 /* ==========================================
-   HEADER CON IMAGEN DE FONDO EN SERVICIOS
+   HEADER SECUNDARIO MODERNO E INTEGRADO
    ========================================== */
 .header-secundario { 
     position: relative;
-    padding: 6rem 1rem; 
+    padding: 5rem 1.5rem 6rem 1.5rem; 
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
-    /* Capa oscura automática encima de la imagen para legibilidad */
-    box-shadow: inset 0 0 0 2000px rgba(28, 42, 56, 0.75); 
+    /* Degradado múltiple: Sombra oscura central + Difuminado suave hacia el fondo de la página */
+    background-image: 
+        linear-gradient(to bottom, rgba(28, 42, 56, 0.7) 0%, rgba(28, 42, 56, 0.85) 60%, var(--fondo) 100%);
+    border-radius: 0 0 30px 30px; /* Bordes suaves en la parte inferior */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+.header-secundario .breadcrumb {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--dorado-logo);
+    margin-bottom: 0.8rem;
+    font-weight: 600;
 }
 
 .header-secundario h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 3.2rem;
-    color: var(--dorado-logo);
-    margin: 0;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    font-size: 3rem;
+    color: #ffffff;
+    margin: 0 0 0.5rem 0;
+    text-shadow: 1px 2px 10px rgba(0,0,0,0.5);
 }
 
-/* Imágenes de fondo personalizadas para cada página */
+.header-secundario p {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: 300;
+}
+
+/* Imágenes específicas bien ambientadas */
 .header-fisioterapia {
-    background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+    background-image: 
+        linear-gradient(to bottom, rgba(28, 42, 56, 0.65) 0%, rgba(28, 42, 56, 0.85) 60%, var(--fondo) 100%),
+        url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
 }
 
 .header-descontracturante {
-    background-image: url('https://images.unsplash.com/photo-1519823551278-64ac92734fb1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+    background-image: 
+        linear-gradient(to bottom, rgba(28, 42, 56, 0.65) 0%, rgba(28, 42, 56, 0.85) 60%, var(--fondo) 100%),
+        url('https://images.unsplash.com/photo-1519823551278-64ac92734fb1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
 }
 
 .header-relajante {
-    background-image: url('https://www.wellme.es/site/article/63566/53459/como-hacer-masajes-relajantes-descubre-todos-sus-beneficios-0_ai1.jpg');
+    background-image: 
+        linear-gradient(to bottom, rgba(28, 42, 56, 0.65) 0%, rgba(28, 42, 56, 0.85) 60%, var(--fondo) 100%),
+        url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
 }
 .detalle-servicio { display: flex; gap: 2rem; margin-top: 2rem; }
 
