@@ -176,3 +176,75 @@ h2 { color: var(--azul-logo); font-size: 2.2rem; text-align: center; margin-bott
 .whatsapp-flotante { position: fixed; bottom: 30px; right: 30px; background-color: #25D366; color: white; padding: 15px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4); z-index: 1000; transition: transform 0.3s ease; }
 .whatsapp-flotante:hover { transform: scale(1.1); }
 footer { text-align: center; padding: 2rem; background-color: var(--azul-logo); color: white; }
+
+/* ==========================================
+   DISEÑO RESPONSIVO (MÓVILES Y TABLETS)
+   ========================================== */
+
+/* Esta regla se aplica solo en pantallas de 768px de ancho o menos (celulares) */
+@media (max-width: 768px) {
+    
+    /* 1. Ajustes de la barra de navegación (Navbar) */
+    nav {
+        padding: 10px 15px;
+        flex-direction: column; /* Apila el logo arriba y el enlace abajo */
+        gap: 10px;
+    }
+    .logo {
+        height: 45px; /* Logo un poco más chico */
+    }
+    .nav-title {
+        font-size: 1.5rem;
+    }
+
+    /* 2. Ajustes del encabezado principal con el video (Hero) */
+    .hero {
+        padding: 4rem 1rem;
+        min-height: 50vh; /* Para que no sea tan alto en el celular */
+    }
+    h1 {
+        font-size: 2.8rem; /* Achicamos la letra principal (antes 4.5rem) */
+    }
+    .hero-contenido p {
+        font-size: 1.1rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    /* 3. Ajustes de la sección "Sobre mí" y los contenedores */
+    .container {
+        padding: 2rem 1.5rem; /* Menos espacio en blanco a los costados */
+    }
+    .intro-content {
+        gap: 1.5rem;
+    }
+    .intro-imagen {
+        max-width: 100%; /* Asegura que la imagen no se salga de la pantalla */
+    }
+    .intro-texto {
+        min-width: 100%; /* El texto ocupa el 100% del ancho del celular */
+    }
+
+    /* 4. Ajustes de los encabezados de las subpáginas (Headers Secundarios) */
+    .header-secundario {
+        padding: 3rem 1rem 4rem 1rem;
+    }
+    .header-secundario h1 {
+        font-size: 2.2rem;
+    }
+    .header-secundario p {
+        font-size: 1rem;
+    }
+
+    /* 5. Ajustes de los detalles de los servicios y tiempos */
+    .detalle-servicio {
+        flex-direction: column; /* Apila los elementos uno debajo del otro */
+        gap: 1rem;
+    }
+    
+    /* 6. Ajuste para los testimonios (Si agregaste el código anterior) */
+    .grid-testimonios {
+        grid-template-columns: 1fr; /* Fuerza a que se vea 1 solo testimonio por fila */
+    }
+}
