@@ -3,49 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ventosas (Cupping) | +Activo</title>
+    <title>Masajes Relajantes | +Activo</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <nav>
         <a href="index.html" class="nav-brand">
-            <span class="nav-title">Volver al Inicio</span>
+            <img src="imagen_2026-09-14_171300325.png" alt="Logo de +Activo" class="logo">
+            <span class="nav-title">+Activo</span>
         </a>
+        <div>
+            <a href="index.html" class="nav-links">Volver al Inicio</a>
+        </div>
     </nav>
 
-   <header class="header-secundario header-ventosas">
-        <p class="breadcrumb">SERVICIOS / TERAPIAS</p>
-        <h1>Ventosas (Cupping)</h1>
-        <p>Terapia de succión para liberar tejido miofascial y mejorar la oxigenación local.</p>
-    </header>
-
+<header class="header-secundario header-ventosas">
+    <h1>Ventosas (Cupping)</h1>
+</header>
+    
     <div class="container">
         <div class="detalle-servicio">
-            <div style="flex: 2;">
-                <h2>¿En qué consiste?</h2>
+            <div class="texto">
+                <h2>¿En qué consiste el servicio?</h2>
                 <p>La terapia con ventosas (o cupping) crea un vacío sobre la piel, succionando el tejido muscular y las fascias. Esto genera un aumento masivo del flujo sanguíneo a la zona afectada, rompiendo adherencias y acelerando la sanación natural.</p>
                 
-                <h3 style="color: var(--azul-logo); margin-top: 2rem;">Resultados esperados:</h3>
-                <ul style="line-height: 1.8;">
-                    <li>Descompresión rápida de contracturas profundas.</li>
-                    <li>Mejora drástica del riego sanguíneo (hiperemia).</li>
-                    <li>Reducción del dolor muscular agudo y crónico.</li>
-                    <li>Aceleración del metabolismo local en la zona tratada.</li>
-                </ul>
-            </div>
-            
-            <div style="flex: 1;">
                 <div class="info-tiempos">
-                    <h3 style="color: var(--azul-logo); margin-top: 0;">⏱️ Duración</h3>
-                    <p style="font-weight: 600; font-size: 1.2rem;">30 - 45 Minutos</p>
-                    <p style="font-size: 0.9rem; margin-top: 15px;">Suele combinarse con masaje manual para potenciar sus efectos relajantes y descontracturantes.</p>
+                    <h3>⏱️ Tiempos y Duración</h3>
+                    <ul>
+                        <li><strong>Sesión Estándar:</strong> 30 - 45 Minutos</li>
+                        <li><strong>Sesión Premium Relaxtime:</strong> 75 minutos.</li>
+                        <li><strong>Frecuencia recomendada:</strong> Se recomienda realizarlo entre 2 y 24 horas después del evento deportivo o esfuerzo físico.</li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
 
-    <footer><p>&copy; 2026 +Activo - Fisioterapia y Masajes</p></footer>
-    <a href="https://wa.link/zccopg" class="whatsapp-flotante" target="_blank">💬 Pedir Turno</a>
+        <hr style="margin: 4rem 0; border: none; border-top: 1px solid #ddd;">
+        <h2>Comentarios y Opiniones</h2>
+        <p style="text-align: center;">¿Disfrutaste tu sesión de relax? Compártenos tu experiencia.</p>
+        
+    <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+        this.page.url = window.location.href;  
+        this.page.identifier = 'relajante'; 
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://sites-4212.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Por favor, activa JavaScript para ver los <a href="https://disqus.com/?ref_noscript">comentarios de Disqus.</a></noscript>
+
+    <footer>
+        <p>&copy; 2026 +Activo - Fisioterapia y Masajes</p>
+    </footer>
+
+    <a href="https://wa.link/zccopg" class="whatsapp-flotante" target="_blank">
+        💬 Pedir Turno
+    </a>
+
 </body>
 </html>
