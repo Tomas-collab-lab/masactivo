@@ -3,52 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Masaje Cervical - + ACTIVO</title>
-    <!-- Aquí puedes enlazar tu archivo CSS si tienes uno, por ejemplo: <link rel="stylesheet" href="estilos.css"> -->
+    <title>Masaje Cervical | +Activo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <a href="index.html">← Volver al inicio</a>
+    <nav>
+        <a href="index.html" class="nav-brand">
+            <span class="nav-title">Volver al Inicio</span>
+        </a>
+    </nav>
+
+    <!-- Usamos un fondo oscuro genérico temporal en CSS para estos nuevos headers -->
+    <header class="header-secundario" style="background-color: var(--azul-logo);">
+        <p class="breadcrumb">SERVICIOS / MASAJES</p>
         <h1>Masaje Cervical</h1>
-        <p>Alivio, Bienestar y Equilibrio</p>
+        <p>Alivio focalizado para tensiones en cuello, hombros y espalda alta.</p>
     </header>
 
-    <main>
-        <section class="detalle-servicio">
-            <h2>Libera la tensión, alivia el dolor y recupera tu bienestar</h2>
-            <p>¿Sientes que cargas el peso del mundo en tus hombros? El Masaje Cervical es una terapia manual especializada focalizada en la zona del cuello, hombros y la parte alta de la espalda. Hoy en día, el uso prolongado de pantallas y las malas posturas generan una rigidez constante. Este masaje libera esa carga, mejorando tu calidad de vida.</p>
+    <div class="container">
+        <div class="detalle-servicio">
+            <div style="flex: 2;">
+                <h2>¿En qué consiste?</h2>
+                <p>El masaje cervical está diseñado para liberar la tensión acumulada en la zona del cuello, trapecios y base del cráneo, zonas que frecuentemente sufren por malas posturas, estrés y uso prolongado de pantallas.</p>
+                
+                <h3 style="color: var(--azul-logo); margin-top: 2rem;">Beneficios principales:</h3>
+                <ul style="line-height: 1.8;">
+                    <li>Alivia dolores de cabeza tensionales y migrañas.</li>
+                    <li>Mejora la movilidad del cuello y reduce la rigidez.</li>
+                    <li>Disminuye la tensión en los hombros.</li>
+                    <li>Previene mareos asociados a contracturas cervicales.</li>
+                </ul>
+            </div>
             
-            <h3>Beneficios Clave:</h3>
-            <ul>
-                <li><strong>Alivia el dolor cervical:</strong> Disminuye la tensión muscular en el área.</li>
-                <li><strong>Reduce el estrés y la ansiedad:</strong> Alivia la tensión que físicamente suele acumularse en los trapecios.</li>
-                <li><strong>Mejora la movilidad:</strong> Aumenta la flexibilidad del cuello.</li>
-                <li><strong>Adiós dolores de cabeza:</strong> Disminuye drásticamente las cefaleas tensionales.</li>
-                <li><strong>Favorece el sueño:</strong> Promueve un descanso más profundo y reparador.</li>
-                <li><strong>Mejora la circulación:</strong> Oxigena los tejidos de la zona afectada.</li>
-            </ul>
+            <div style="flex: 1;">
+                <div class="info-tiempos">
+                    <h3 style="color: var(--azul-logo); margin-top: 0;">⏱️ Duración</h3>
+                    <p style="font-weight: 600; font-size: 1.2rem;">30 Minutos</p>
+                    <p style="font-size: 0.9rem; margin-top: 15px;">Sesión enfocada exclusivamente en la parte superior del cuerpo para resultados rápidos y efectivos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-            <h3>Ideal para:</h3>
-            <p>Personas con estrés laboral, conductores, oficinistas o cualquiera que pase muchas horas frente a una pantalla.</p>
-        </section>
+    <footer>
+        <p>&copy; 2026 +Activo - Fisioterapia y Masajes</p>
+    </footer>
 
-        <section class="comentarios">
-            <h3>¿Te has atendido con nosotros? ¡Déjanos tu opinión!</h3>
-            <!-- CÓDIGO DISQUS PARA CERVICAL -->
-            <div id="disqus_thread"></div>
-            <script>
-                var disqus_config = function () {
-                    this.page.url = window.location.href;  
-                    this.page.identifier = 'cervical'; // ID Único
-                };
-                (function() { 
-                    var d = document, s = d.createElement('script');
-                    s.src = 'https://sites-4212.disqus.com/embed.js';
-                    s.setAttribute('data-timestamp', +new Date());
-                    (d.head || d.body).appendChild(s);
-                })();
-            </script>
-        </section>
-    </main>
+    <a href="https://wa.link/zccopg" class="whatsapp-flotante" target="_blank">💬 Pedir Turno</a>
 </body>
 </html>
