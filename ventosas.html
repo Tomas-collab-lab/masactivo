@@ -3,50 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ventosas Terapéuticas - + ACTIVO</title>
+    <title>Ventosas (Cupping) | +Activo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <a href="index.html">← Volver al inicio</a>
-        <h1>Ventosas Terapéuticas</h1>
-        <p>Alivio, recuperación y bienestar</p>
+    <nav>
+        <a href="index.html" class="nav-brand">
+            <span class="nav-title">Volver al Inicio</span>
+        </a>
+    </nav>
+
+    <header class="header-secundario" style="background-color: var(--azul-logo);">
+        <p class="breadcrumb">SERVICIOS / TERAPIAS</p>
+        <h1>Ventosas (Cupping)</h1>
+        <p>Terapia de succión para liberar tejido miofascial y mejorar la oxigenación local.</p>
     </header>
 
-    <main>
-        <section class="detalle-servicio">
-            <h2>Liberá tensiones, recuperá tu movimiento y sentite mejor.</h2>
-            <p>Las ventosas terapéuticas (Cupping) utilizan una suave succión sobre la piel para ayudar a disminuir la tensión muscular, mejorar la circulación local y favorecer la recuperación de los tejidos. Es una poderosa terapia complementaria para tu salud.</p>
+    <div class="container">
+        <div class="detalle-servicio">
+            <div style="flex: 2;">
+                <h2>¿En qué consiste?</h2>
+                <p>La terapia con ventosas (o cupping) crea un vacío sobre la piel, succionando el tejido muscular y las fascias. Esto genera un aumento masivo del flujo sanguíneo a la zona afectada, rompiendo adherencias y acelerando la sanación natural.</p>
+                
+                <h3 style="color: var(--azul-logo); margin-top: 2rem;">Resultados esperados:</h3>
+                <ul style="line-height: 1.8;">
+                    <li>Descompresión rápida de contracturas profundas.</li>
+                    <li>Mejora drástica del riego sanguíneo (hiperemia).</li>
+                    <li>Reducción del dolor muscular agudo y crónico.</li>
+                    <li>Aceleración del metabolismo local en la zona tratada.</li>
+                </ul>
+            </div>
             
-            <h3>Beneficios Principales:</h3>
-            <ul>
-                <li><strong>Alivio profundo:</strong> Excelente para contracturas y tensiones musculares severas.</li>
-                <li><strong>Disminución del dolor:</strong> Reduce molestias musculares y articulares.</li>
-                <li><strong>Circulación:</strong> Mejora notablemente el flujo sanguíneo y linfático.</li>
-                <li><strong>Movilidad:</strong> Favorece la flexibilidad muscular.</li>
-                <li><strong>Recuperación deportiva:</strong> Ayuda con la sensación de fatiga extrema.</li>
-            </ul>
+            <div style="flex: 1;">
+                <div class="info-tiempos">
+                    <h3 style="color: var(--azul-logo); margin-top: 0;">⏱️ Duración</h3>
+                    <p style="font-weight: 600; font-size: 1.2rem;">30 - 45 Minutos</p>
+                    <p style="font-size: 0.9rem; margin-top: 15px;">Suele combinarse con masaje manual para potenciar sus efectos relajantes y descontracturantes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-            <h3>Ideal para:</h3>
-            <p>Dolor cervical y lumbar, sobrecarga deportiva, estrés y rigidez postural. <em>(Nota: Es una terapia complementaria, no reemplaza tratamientos médicos).</em></p>
-        </section>
-
-        <section class="comentarios">
-            <h3>¿Te has atendido con nosotros? ¡Déjanos tu opinión!</h3>
-            <!-- CÓDIGO DISQUS PARA VENTOSAS -->
-            <div id="disqus_thread"></div>
-            <script>
-                var disqus_config = function () {
-                    this.page.url = window.location.href;  
-                    this.page.identifier = 'ventosas'; // ID Único
-                };
-                (function() { 
-                    var d = document, s = d.createElement('script');
-                    s.src = 'https://sites-4212.disqus.com/embed.js';
-                    s.setAttribute('data-timestamp', +new Date());
-                    (d.head || d.body).appendChild(s);
-                })();
-            </script>
-        </section>
-    </main>
+    <footer><p>&copy; 2026 +Activo - Fisioterapia y Masajes</p></footer>
+    <a href="https://wa.link/zccopg" class="whatsapp-flotante" target="_blank">💬 Pedir Turno</a>
 </body>
 </html>
