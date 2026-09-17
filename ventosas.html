@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventosas Terapéuticas - + ACTIVO</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">← Volver al inicio</a>
+        <h1>Ventosas Terapéuticas</h1>
+        <p>Alivio, recuperación y bienestar</p>
+    </header>
+
+    <main>
+        <section class="detalle-servicio">
+            <h2>Liberá tensiones, recuperá tu movimiento y sentite mejor.</h2>
+            <p>Las ventosas terapéuticas (Cupping) utilizan una suave succión sobre la piel para ayudar a disminuir la tensión muscular, mejorar la circulación local y favorecer la recuperación de los tejidos. Es una poderosa terapia complementaria para tu salud.</p>
+            
+            <h3>Beneficios Principales:</h3>
+            <ul>
+                <li><strong>Alivio profundo:</strong> Excelente para contracturas y tensiones musculares severas.</li>
+                <li><strong>Disminución del dolor:</strong> Reduce molestias musculares y articulares.</li>
+                <li><strong>Circulación:</strong> Mejora notablemente el flujo sanguíneo y linfático.</li>
+                <li><strong>Movilidad:</strong> Favorece la flexibilidad muscular.</li>
+                <li><strong>Recuperación deportiva:</strong> Ayuda con la sensación de fatiga extrema.</li>
+            </ul>
+
+            <h3>Ideal para:</h3>
+            <p>Dolor cervical y lumbar, sobrecarga deportiva, estrés y rigidez postural. <em>(Nota: Es una terapia complementaria, no reemplaza tratamientos médicos).</em></p>
+        </section>
+
+        <section class="comentarios">
+            <h3>¿Te has atendido con nosotros? ¡Déjanos tu opinión!</h3>
+            <!-- CÓDIGO DISQUS PARA VENTOSAS -->
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = window.location.href;  
+                    this.page.identifier = 'ventosas'; // ID Único
+                };
+                (function() { 
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://sites-4212.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+        </section>
+    </main>
+</body>
+</html>
