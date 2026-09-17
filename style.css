@@ -118,12 +118,24 @@ h2 { color: var(--azul-logo); font-size: 2.2rem; text-align: center; margin-bott
     flex-grow: 1; /* Hace que el contenido ocupe el resto de la tarjeta */
 }
 
-/* Si quieres que el botón siempre quede abajo alineado */
+/* DISEÑO DEL BOTÓN "SABER MÁS" */
 .btn-saber-mas {
     margin-top: auto; 
-    /* ... (aquí mantén los colores o bordes que ya tenías para tu botón) */
+    display: inline-block;
+    background-color: var(--dorado-logo); /* Color de fondo */
+    color: var(--blanco); /* Color del texto */
+    text-decoration: none; /* Quita la línea de abajo */
+    padding: 10px 20px;
+    border-radius: 5px; /* Bordes redondeados */
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
-.btn-saber-mas:hover { background-color: var(--azul-logo); }
+
+.btn-saber-mas:hover { 
+    background-color: var(--azul-logo); 
+    transform: translateY(-2px); /* Pequeño salto al pasar el mouse */
+}
 
 /* ==========================================
    HEADER SECUNDARIO MODERNO E INTEGRADO
