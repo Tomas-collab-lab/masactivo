@@ -87,13 +87,42 @@ h2 { color: var(--azul-logo); font-size: 2.2rem; text-align: center; margin-bott
 .intro-texto { flex: 1; min-width: 300px; font-size: 1.1rem; text-align: justify; }
 .intro-imagen { width: 100%; max-width: 400px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.15); border: 3px solid var(--dorado-logo); }
 
-.services { display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; }
-.card { background: var(--blanco); border-radius: 12px; box-shadow: 0 8px 15px rgba(0,0,0,0.05); flex: 1; min-width: 280px; text-align: center; border-bottom: 5px solid var(--dorado-logo); overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; display: flex; flex-direction: column; }
-.card:hover { transform: translateY(-8px); box-shadow: 0 15px 25px rgba(0,0,0,0.12); }
-.card img { width: 100%; height: 200px; object-fit: cover; }
-.card-body { padding: 1.5rem 2rem 2.5rem 2rem; flex-grow: 1; display: flex; flex-direction: column; }
-.card h3 { color: var(--azul-logo); font-size: 1.4rem; margin-top: 0; }
-.btn-saber-mas { margin-top: auto; display: inline-block; background-color: var(--dorado-logo); color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; transition: background 0.3s; }
+.services {
+    display: grid;
+    /* Esta es la magia: crea columnas automáticas que no midan menos de 300px */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; /* Espacio entre las tarjetas */
+    max-width: 1200px; /* Ancho máximo para que no se estiren al infinito en PC */
+    margin: 0 auto; /* Centra todo en la pantalla */
+    padding: 20px;
+}
+.card {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden; /* Para que las puntas de la imagen sigan redondeadas */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+    height: 220px; /* Obliga a TODAS las fotos a tener esta misma altura */
+    object-fit: cover; /* Recorta el centro de la foto sin deformarla */
+}
+
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Hace que el contenido ocupe el resto de la tarjeta */
+}
+
+/* Si quieres que el botón siempre quede abajo alineado */
+.btn-saber-mas {
+    margin-top: auto; 
+    /* ... (aquí mantén los colores o bordes que ya tenías para tu botón) */
+}
 .btn-saber-mas:hover { background-color: var(--azul-logo); }
 
 /* ==========================================
