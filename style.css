@@ -204,7 +204,19 @@ h2 { color: var(--azul-logo); font-size: 2.2rem; text-align: center; margin-bott
         linear-gradient(to bottom, rgba(28, 42, 56, 0.65) 0%, rgba(28, 42, 56, 0.85) 60%, var(--fondo) 100%),
         url('https://images.unsplash.com/photo-1544161514-352d4afe4bc5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
 }
+/* Ventosas */
+.header-ventosas {
+    background-image: 
+        linear-gradient(to bottom, rgba(28, 42, 56, 0.65) 0%, rgba(28, 42, 56, 0.85) 60%, var(--fondo) 100%),
+        url('https://images.unsplash.com/photo-1519823551278-64ac92734fb1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+}
 
+/* Postcompetitivo */
+.header-postcompetitivo {
+    background-image: 
+        linear-gradient(to bottom, rgba(28, 42, 56, 0.65) 0%, rgba(28, 42, 56, 0.85) 60%, var(--fondo) 100%),
+        url('https://images.unsplash.com/photo-1574680096145-d05b474e2155?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+}
 .header-cervical {
     background-image: 
         linear-gradient(to bottom, rgba(28, 42, 56, 0.65) 0%, rgba(28, 42, 56, 0.85) 60%, var(--fondo) 100%),
