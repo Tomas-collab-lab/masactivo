@@ -3,53 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Masaje Cervical | +Activo</title>
+    <title>Masajes Descontracturantes | +Activo</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <nav>
         <a href="index.html" class="nav-brand">
-            <span class="nav-title">Volver al Inicio</span>
+            <img src="imagen_2026-09-14_171300325.png" alt="Logo de +Activo" class="logo">
+            <span class="nav-title">+Activo</span>
         </a>
+        <div>
+            <a href="index.html" class="nav-links">Volver al Inicio</a>
+        </div>
     </nav>
 
-    <!-- Usamos un fondo oscuro genérico temporal en CSS para estos nuevos headers -->
-    <header class="header-secundario header-cervical">
-        <p class="breadcrumb">SERVICIOS / MASAJES</p>
-        <h1>Masaje Cervical</h1>
-        <p>Alivio focalizado para tensiones en cuello, hombros y espalda alta.</p>
-    </header>
-
+<header class="header-secundario header-cervical">
+    <h1>Masaje Cervical</h1>
+</header>
     <div class="container">
         <div class="detalle-servicio">
-            <div style="flex: 2;">
-                <h2>¿En qué consiste?</h2>
+            <div class="texto">
+                <h2>¿En qué consiste el servicio?</h2>
                 <p>El masaje cervical está diseñado para liberar la tensión acumulada en la zona del cuello, trapecios y base del cráneo, zonas que frecuentemente sufren por malas posturas, estrés y uso prolongado de pantallas.</p>
                 
-                <h3 style="color: var(--azul-logo); margin-top: 2rem;">Beneficios principales:</h3>
-                <ul style="line-height: 1.8;">
-                    <li>Alivia dolores de cabeza tensionales y migrañas.</li>
-                    <li>Mejora la movilidad del cuello y reduce la rigidez.</li>
-                    <li>Disminuye la tensión en los hombros.</li>
-                    <li>Previene mareos asociados a contracturas cervicales.</li>
-                </ul>
-            </div>
-            
-            <div style="flex: 1;">
                 <div class="info-tiempos">
-                    <h3 style="color: var(--azul-logo); margin-top: 0;">⏱️ Duración</h3>
-                    <p style="font-weight: 600; font-size: 1.2rem;">30 Minutos</p>
-                    <p style="font-size: 0.9rem; margin-top: 15px;">Sesión enfocada exclusivamente en la parte superior del cuerpo para resultados rápidos y efectivos.</p>
+                    <h3>⏱️ Tiempos y Duración</h3>
+                    <ul>
+                        <li><strong>Zona focalizada (ej. Espalda/Cuello):</strong> 30 minutos.</li>
+                        <li><strong>Cuerpo completo:</strong>60 Minutos</li>
+                        <li><strong>Frecuencia recomendada:</strong> Sesión enfocada exclusivamente en la parte superior del cuerpo para resultados rápidos y efectivos.</li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
+
+        <hr style="margin: 4rem 0; border: none; border-top: 1px solid #ddd;">
+        <h2>Comentarios y Experiencias</h2>
+        <p style="text-align: center;">¿Te has realizado una sesión de masajes descontracturantes con nosotros? ¡Déjanos tu comentario!</p>
+        
+        <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+        this.page.url = window.location.href;  
+        this.page.identifier = 'descontracturante'; 
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://sites-4212.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Por favor, activa JavaScript para ver los <a href="https://disqus.com/?ref_noscript">comentarios de Disqus.</a></noscript>
 
     <footer>
         <p>&copy; 2026 +Activo - Fisioterapia y Masajes</p>
     </footer>
 
-    <a href="https://wa.link/zccopg" class="whatsapp-flotante" target="_blank">💬 Pedir Turno</a>
+    <a href="https://wa.link/zccopg" class="whatsapp-flotante" target="_blank">
+        💬 Pedir Turno
+    </a>
+
 </body>
 </html>
