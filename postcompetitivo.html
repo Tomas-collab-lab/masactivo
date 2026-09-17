@@ -3,47 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Masaje Postcompetitivo - + ACTIVO</title>
+    <title>Masaje Postcompetitivo | +Activo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <a href="index.html">← Volver al inicio</a>
+    <nav>
+        <a href="index.html" class="nav-brand">
+            <span class="nav-title">Volver al Inicio</span>
+        </a>
+    </nav>
+
+    <header class="header-secundario" style="background-color: var(--azul-logo);">
+        <p class="breadcrumb">SERVICIOS / DEPORTIVO</p>
         <h1>Masaje Postcompetitivo</h1>
-        <p>Cuidá tu cuerpo, potenciá tu rendimiento</p>
+        <p>Acelera la recuperación muscular después de un gran esfuerzo físico.</p>
     </header>
 
-    <main>
-        <section class="detalle-servicio">
-            <h2>Recupérate mejor. Volvé más fuerte.</h2>
-            <p>Tu cuerpo es tu herramienta y tu recuperación es parte de tu entrenamiento. El Masaje Postcompetitivo está diseñado para deportistas que buscan volver más fuertes después de un gran esfuerzo físico. Te ayudamos a transicionar del estado de máxima exigencia al estado de reparación.</p>
+    <div class="container">
+        <div class="detalle-servicio">
+            <div style="flex: 2;">
+                <h2>¿En qué consiste?</h2>
+                <p>Es un masaje enfocado en la recuperación del deportista tras una competencia o un entrenamiento intenso. Utiliza maniobras de vaciado y estiramientos suaves para relajar la musculatura fatigada.</p>
+                
+                <h3 style="color: var(--azul-logo); margin-top: 2rem;">Beneficios principales:</h3>
+                <ul style="line-height: 1.8;">
+                    <li>Favorece la eliminación del ácido láctico y toxinas.</li>
+                    <li>Reduce los espasmos musculares y calambres.</li>
+                    <li>Previene la aparición de lesiones por sobrecarga.</li>
+                    <li>Acorta significativamente el tiempo de recuperación.</li>
+                </ul>
+            </div>
             
-            <h3>¿Qué logramos con esta terapia?</h3>
-            <ul>
-                <li><strong>Reduce la tensión muscular:</strong> Ideal para post-carrera o post-partido.</li>
-                <li><strong>Acelera la recuperación y elimina toxinas:</strong> Efecto "barrido" de desechos.</li>
-                <li><strong>Mejora la circulación:</strong> Disminuye rápidamente la inflamación.</li>
-                <li><strong>Disminuye el dolor y la fatiga:</strong> Devuelve la frescura a los músculos.</li>
-                <li><strong>Prepara tu cuerpo:</strong> Te deja en óptimas condiciones para el próximo desafío.</li>
-            </ul>
-        </section>
+            <div style="flex: 1;">
+                <div class="info-tiempos">
+                    <h3 style="color: var(--azul-logo); margin-top: 0;">⏱️ Duración</h3>
+                    <p style="font-weight: 600; font-size: 1.2rem;">45 - 60 Minutos</p>
+                    <p style="font-size: 0.9rem; margin-top: 15px;">Se recomienda realizarlo entre 2 y 24 horas después del evento deportivo o esfuerzo físico.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <section class="comentarios">
-            <h3>¿Te has atendido con nosotros? ¡Déjanos tu opinión!</h3>
-            <!-- CÓDIGO DISQUS PARA POSTCOMPETITIVO -->
-            <div id="disqus_thread"></div>
-            <script>
-                var disqus_config = function () {
-                    this.page.url = window.location.href;  
-                    this.page.identifier = 'postcompetitivo'; // ID Único
-                };
-                (function() { 
-                    var d = document, s = d.createElement('script');
-                    s.src = 'https://sites-4212.disqus.com/embed.js';
-                    s.setAttribute('data-timestamp', +new Date());
-                    (d.head || d.body).appendChild(s);
-                })();
-            </script>
-        </section>
-    </main>
+    <footer><p>&copy; 2026 +Activo - Fisioterapia y Masajes</p></footer>
+    <a href="https://wa.link/zccopg" class="whatsapp-flotante" target="_blank">💬 Pedir Turno</a>
 </body>
 </html>
